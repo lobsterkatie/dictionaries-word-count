@@ -38,8 +38,9 @@ for line in text_file:
     #         word_counts[word] += 1
 
 word_counts = collections.Counter(big_word_list)
+sorted_word_counts = sorted(word_counts.items())
 
-for word, count in word_counts.items():
+for word, count in sorted_word_counts:
     print word, count
 
 # print word_counts.keys()
