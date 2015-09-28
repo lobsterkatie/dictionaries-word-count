@@ -1,4 +1,6 @@
-text_file = open("twain.txt")
+import sys 
+
+text_file = open(sys.argv[1])
 word_counts = {}
 
 for line in text_file:
